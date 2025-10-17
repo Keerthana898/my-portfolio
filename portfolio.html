@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keerthana | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+<header>
+  <nav class="navbar">
+    <h1 class="logo">Keerthana<span>.</span></h1>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <button id="themeToggle" class="theme-toggle">🌙</button>
+</header>
+
+<section id="home" class="home">
+  <div class="home-container">
+    <div class="text-section">
+      <h2>Hello, I'm <span>Keerthana</span></h2>
+      <p><span id="typed-text"></span><span class="cursor">|</span></p>
+      <button id="hireMeBtn">Hire Me</button>
+       <!-- <a href="mailto:keerthanakandolu@gmail.com?subject=Hiring%20Request&body=Hello%20Keerthana," id="hireMeBtn"> -->
+  <!-- Hire Me -->
+<!-- </a> -->
+
+    </div>
+    <div class="image-section">
+      <img src="images/port pic.jpg" alt="Keerthana Photo">
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about reveal">
+  <h2>About Me</h2>
+  <p>
+  Motivated Frontend Developer skilled in HTML, CSS, and JavaScript. 
+Passionate about creating responsive, user-friendly websites and continuously improving UI/UX skills. 
+Looking for internship opportunities to contribute to real-world projects and grow professionally.
+
+  </p>
+</section>
+<section id="projects" class="projects reveal">
+  <h2>My Projects</h2>
+  <div class="filter-btns">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+    <button class="filter-btn" data-filter="js">JS</button>
+    <button class="filter-btn" data-filter="api">API</button>
+  </div>
+
+  <div class="project-grid">
+    <div class="project-card web" data-img="images/project1.jpg.png"><h3>Portfolio Website</h3><p>HTML, CSS, JS</p></div>
+    <div class="project-card js" data-img="images/project2.jpg.png"><h3>Todo App</h3><p>JavaScript, LocalStorage</p></div>
+    <div class="project-card api" data-img="images/project3.jpg.png"><h3>Weather App</h3><p>OpenWeather API</p></div>
+    <div class="project-card web" data-img="images/project4.jpg.png"><h3>Landing Page</h3><p>HTML, CSS</p></div>
+  </div>
+</section>
+
+
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-img" src="" alt="Project Image">
+</div>
+
+
+<section id="contact" class="contact reveal">
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Keerthana | All Rights Reserved</p>
+</footer>
+<button id="backToTop">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
